@@ -1,1 +1,23 @@
-/*# sourceMappingURL=main.css.map */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+img,
+svg {
+  width: 100px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}/*# sourceMappingURL=main.css.map */
