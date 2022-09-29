@@ -1,10 +1,60 @@
 @import "config";
 
 body {
-  width: 100vw;
+  width: min(1300px, 95vw);
   height: 100vh;
+  margin: 0 auto;
 }
 
 // ===============
 //     LAYOUT
 // ===============
+
+.layout__container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas:
+    "aside header header header"
+    "aside main main main"
+    "aside main main main"
+    "aside main main main";
+}
+
+.header {
+  grid-area: header;
+}
+
+.aside {
+  grid-area: aside;
+}
+
+.main {
+  grid-area: main;
+}
+
+.aside {
+  padding: 1em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2em;
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+
+    &__svg {
+      width: 50px;
+    }
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+}
