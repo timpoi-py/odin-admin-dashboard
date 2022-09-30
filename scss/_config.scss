@@ -1,9 +1,12 @@
 $clr--main: #ccc5b9;
 $clr--accent: #eb5e28;
 $clr--light: #fffcf2;
-$clr--dark: #403d39;
+$clr--dark: rgb(65, 65, 65);
+$clr--darkest: #252525;
 
-@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@300;400;900&display=swap");
+html {
+  scroll-behavior: smooth;
+}
 
 *,
 *::before,
@@ -11,10 +14,12 @@ $clr--dark: #403d39;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font: inherit;
   font-family: "Roboto", sans-serif;
 }
 
-li {
+li,
+a {
   list-style: none;
   list-style-type: none;
   text-decoration: none;

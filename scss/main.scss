@@ -1,9 +1,10 @@
 @import "config";
 
 body {
-  width: min(1300px, 95vw);
+  width: min(1500px, 95vw);
   height: 100vh;
   margin: 0 auto;
+  background-color: $clr--darkest;
 }
 
 // ===============
@@ -41,14 +42,22 @@ body {
   align-items: center;
   gap: 2em;
 
+  background-color: $clr--dark;
+
   .logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1em;
+    gap: 0.5em;
+
+    letter-spacing: 2px;
+    font-size: 2em;
+    font-weight: 900;
+    color: white;
 
     &__svg {
       width: 50px;
+      fill: white;
     }
   }
 
@@ -56,5 +65,29 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2em;
+
+    a {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      gap: 1em;
+      color: white;
+      font-weight: 500;
+      letter-spacing: 1.5px;
+      font-size: 1.3em;
+
+      svg {
+        scale: 0.6;
+        height: 50px;
+        width: 50px;
+
+        fill: white;
+      }
+    }
+
+    a:hover {
+      scale: 1.05;
+    }
   }
 }
