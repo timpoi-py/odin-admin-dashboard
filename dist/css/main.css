@@ -25,7 +25,7 @@ svg {
 }
 
 body {
-  width: min(1500px, 95vw);
+  width: min(1800px, 95vw);
   height: 100vh;
   margin: 0 auto;
   background-color: #252525;
@@ -95,4 +95,118 @@ body {
 }
 .aside .navbar a:hover {
   scale: 1.05;
+}
+
+.header {
+  display: grid;
+  gap: 1em;
+  background-color: #fffefb;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 1em 2em;
+}
+.header__upper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+.header__upper svg {
+  scale: 0.6;
+  height: 50px;
+  width: 50px;
+}
+.header__upper .search-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1em;
+  width: 80%;
+}
+.header__upper .search-container input {
+  height: 2em;
+  border-radius: 1em;
+  border: 0;
+  background-color: #dddddd;
+  padding-left: 1em;
+  width: 70%;
+}
+.header__upper .search-container input::-moz-placeholder {
+  padding-left: 1em;
+}
+.header__upper .search-container input:-ms-input-placeholder {
+  padding-left: 1em;
+}
+.header__upper .search-container input::placeholder {
+  padding-left: 1em;
+}
+.header__upper__profile {
+  display: flex;
+  align-items: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  gap: 1em;
+}
+.header__upper__profile .image {
+  width: 3.5em;
+  height: 3.5em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #eb5e28;
+}
+.header__upper__profile p {
+  font-size: 1.2em;
+  font-weight: 600;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.header__lower {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__lower .greetings {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.header__lower .greetings .image {
+  border-radius: 50%;
+  box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.4);
+}
+.header__lower .greetings p {
+  font-size: 1.75em;
+  font-weight: 600;
+}
+.header__lower .greetings p:before {
+  content: "Hi there,";
+  display: block;
+  font-size: 0.6em;
+  margin-bottom: 0.5em;
+}
+.header__lower .btns {
+  display: flex;
+  gap: 1em;
+}
+.header__lower .btns .btn {
+  cursor: pointer;
+  width: 8rem;
+  height: 2.5rem;
+  border-radius: 1.5rem;
+  background-color: rgb(65, 65, 65);
+  color: white;
+  font-weight: 700;
+}
+.header__lower .btns .btn:hover,
+.header__lower .btns .btn:focus {
+  color: #252525;
+  background-color: white;
+  border: 0.2em solid #252525;
+  scale: 1.1;
 }/*# sourceMappingURL=main.css.map */

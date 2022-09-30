@@ -1,7 +1,7 @@
 @import "config";
 
 body {
-  width: min(1500px, 95vw);
+  width: min(1800px, 95vw);
   height: 100vh;
   margin: 0 auto;
   background-color: $clr--darkest;
@@ -88,6 +88,122 @@ body {
 
     a:hover {
       scale: 1.05;
+    }
+  }
+}
+
+.header {
+  display: grid;
+  gap: 1em;
+  background-color: $clr--light;
+  height: max-content;
+  padding: 1em 2em;
+
+  &__upper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: min-content;
+
+    svg {
+      scale: 0.6;
+      height: 50px;
+      width: 50px;
+    }
+
+    .search-container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 1em;
+      width: 80%;
+
+      input {
+        height: 2em;
+        border-radius: 1em;
+        border: 0;
+        background-color: $clr--main;
+        padding-left: 1em;
+        width: 70%;
+      }
+
+      input::placeholder {
+        padding-left: 1em;
+      }
+    }
+
+    &__profile {
+      display: flex;
+      align-items: center;
+      width: max-content;
+      gap: 1em;
+
+      .image {
+        width: 3.5em;
+        height: 3.5em;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 5px solid $clr--accent;
+      }
+
+      p {
+        font-size: 1.2em;
+        font-weight: 600;
+        width: max-content;
+      }
+    }
+  }
+
+  &__lower {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .greetings {
+      display: flex;
+      align-items: center;
+      gap: 1em;
+
+      .image {
+        border-radius: 50%;
+        box-shadow: 0 0 15px 2px rgb(0 0 0 / 0.4);
+      }
+
+      p {
+        font-size: 1.75em;
+        font-weight: 600;
+      }
+
+      p:before {
+        content: "Hi there,";
+        display: block;
+        font-size: 0.6em;
+        margin-bottom: 0.5em;
+      }
+    }
+
+    .btns {
+      display: flex;
+      gap: 1em;
+
+      .btn {
+        cursor: pointer;
+        width: 8rem;
+        height: 2.5rem;
+        border-radius: 1.5rem;
+
+        background-color: $clr--dark;
+        color: white;
+        font-weight: 700;
+      }
+
+      .btn:hover,
+      .btn:focus {
+        color: $clr--darkest;
+        background-color: white;
+        border: 0.2em solid $clr--darkest;
+        scale: 1.1;
+      }
     }
   }
 }
